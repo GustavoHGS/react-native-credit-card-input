@@ -164,6 +164,7 @@ export default class CreditCardInput extends Component {
             scrollEnabled={allowScroll}
             showsHorizontalScrollIndicator={false}
             style={s.form}>
+          {this.props.cpfInput}
           <CCInput {...this._inputProps("number")}
               containerStyle={[s.inputContainer, inputContainerStyle, { width: CARD_NUMBER_INPUT_WIDTH }]} />
           <CCInput {...this._inputProps("expiry")}
